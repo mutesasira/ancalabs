@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container-fluid">
+  <div class="container-fluid flex">
     <a class="navbar-brand" href="#"><img src="<?php echo base_url('public/assets/images/logo.png'); ?>" alt="" class="img-fluid"> COVID-19 Lab Booking</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

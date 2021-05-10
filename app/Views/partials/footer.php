@@ -1,4 +1,4 @@
-<footer id="footer" class="fixed-bottom">
+<!-- <footer id="footer" class="fixed-bottom">
 	<div class="container">
 
 		<div class="me-md-auto text-center text-md-start">
@@ -7,4 +7,4 @@
 			</div>
 		</div>
 	</div>
-</footer>
+</footer> -->

@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="<?= base_url('public/assets/venders/swiper/swiper-bundle.min.css') ?>"/>
         <link rel="stylesheet" href="<?= base_url('public/assets/venders/datepicker.css') ?>"/>
         <link rel="stylesheet" href="<?= base_url('public/assets/css/style.css') ?>"/>
+        <link rel="stylesheet" href="<?= base_url('public/assets/venders/tailwind.min.css') ?>"/>
+    
     </head>
     <body>
 	    <div class="container">

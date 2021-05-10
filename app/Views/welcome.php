@@ -27,7 +27,7 @@
 
         <p>Please refer to our official Measures <a href="#">Here</a></p>
 
-        <p>If you are a returning traveller, <a href="#">Login</a> to submit your details. For new travellers, <a href="#">Register</a> to proceed.</p>
+        <p>If you are a returning traveller, <a href="#">Login</a> to submit your details. For new travellers, <a href="clients/create-client">Register</a> to proceed.</p>
 
         <a href="clients/create-client" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">Get Started</a>
   </div>

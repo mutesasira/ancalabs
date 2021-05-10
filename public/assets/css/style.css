@@ -1,59 +1,67 @@
 #footer .fixed-bottom {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; /* Vertically center the text there */
-  background-color: #f5f5f5;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px;
+    /* Vertically center the text there */
+    background-color: #f5f5f5;
 }
 
-.navbar-nav{
-	margin-left: auto
+.navbar-nav {
+    margin-left: auto
 }
 
-.nav-item a{
-	text-transform: uppercase;
+.nav-item a {
+    text-transform: uppercase;
     font-size: 18px;
 }
 
 .navbar-brand img {
-   height: 55px;
+    height: 55px;
 }
 
-.navbar-brand{
-	font-size: 28px;
+.navbar-brand {
+    font-size: 28px;
     text-transform: none;
     font-weight: bold;
     color: #26587b;
 }
 
-.content-area{
-  padding-top: 20px;
+.content-area {
+    padding-top: 20px;
 }
 
-.content-head, tab-pane h1{
-  font-size: 24px;
+.content-head,
+tab-pane h1 {
+    font-size: 24px;
     color: #2b4f90;
     margin-bottom: 20px;
 }
 
 .zandgar__wizard {
-  display: block;
-  height: 100%;
-  position: relative;
+    display: block;
+    height: 100%;
+    position: relative;
 }
 
 .zandgar__wizard .zandgar__step {
-  display: none;
+    display: none;
 }
+
 .zandgar__wizard .zandgar__step.zandgar__step__active {
-  display: block;
+    display: block;
 }
 
 .col-img {
-  /* https://unsplash.com/photos/yWwob8kwOCk */
-  background: scroll center url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
-  background-size: cover;
-  min-height: 100vh;
+    /* https://unsplash.com/photos/yWwob8kwOCk */
+    background: scroll center url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.client-padding {
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
