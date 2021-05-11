@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/home"><i class="fa fa-home" ></i> Home</a>
+          <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-home" ></i> Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/my_booking"><i class="fa fa-book-open" ></i> My Bookings</a>

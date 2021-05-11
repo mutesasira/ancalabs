@@ -2,6 +2,8 @@
 
 namespace Config;
 
+use App\Controllers\MainController;
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -34,6 +36,10 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/clients/create-client', 'Client::create');
+$routes->get('/clients/save', 'Client::save');
+$routes->get('/clients/lab-booking', 'MainController::lab');
+$routes->get('/clients/hotel-booking', 'MainController::hotel');
+$routes->get('/clients/travel-details', 'MainController::travel');
 
 
 /*
