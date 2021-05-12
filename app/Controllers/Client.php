@@ -28,6 +28,11 @@ class Client extends Controller
 
     public function create()
     {
+        // if($this->request->getMethod()=='post'){
+        //     $data = $this->request->getVar();
+
+        //      print_r($data);
+        // }
         return view('create-client');
     }
 
@@ -50,10 +55,11 @@ class Client extends Controller
             'nok_phone'  => $this->input->post('nok_phone'),
             'nok_email'  => $this->input->post('nok_email'),
         );
-        $this->ClientModel->insert($data);
+        echo($data);
+        // $this->ClientModel->insert($data);
 
-
-        redirect("clients/create-client");
+           // echo("ok for now");
+        // redirect("clients/create-client");
     }
 
 

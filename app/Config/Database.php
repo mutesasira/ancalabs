@@ -34,7 +34,7 @@ class Database extends Config
 		'DSN'      => '',
 		'hostname' => 'localhost',
 		'username' => 'root',
-		'password' => 'ZAInao123=&/',
+		'password' => '',
 		'database' => 'traveltested',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
