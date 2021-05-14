@@ -28,43 +28,38 @@ class Client extends Controller
 
     public function create()
     {
-        // if($this->request->getMethod()=='post'){
-        //     $data = $this->request->getVar();
-
-        //      print_r($data);
-        // }
+        
         return view('create-client');
     }
 
-    public function save()
-    {
-        $data = array(
-            'first_name' => $this->input->post('first_name'),
-            'last_name' => $this->input->post('last_name'),
-            'other_namea'  => $this->input->post('other_namea'),
-            'sex'  => $this->input->post('sex'),
-            'date_of_birth'  => $this->input->post('date_of_birth'),
-            'nationality'  => $this->input->post('nationality'),
-            'national_id'  => $this->input->post('national_id'),
-            'email'  => $this->input->post('email'),
-            'phone'  => $this->input->post('phone'),
-            'alternative_phone'  => $this->input->post('alternative_phone'),
-            'passport_number'  => $this->input->post('passport_number'),
-            'expiry_date'  => $this->input->post('expiry_date'),
-            'nok_full_name'  => $this->input->post('nok_full_name'),
-            'nok_phone'  => $this->input->post('nok_phone'),
-            'nok_email'  => $this->input->post('nok_email'),
-        );
-        echo($data);
-        // $this->ClientModel->insert($data);
-
-           // echo("ok for now");
-        // redirect("clients/create-client");
-    }
-
-
-
-
+    
+	public function saveData()
+	{
+		helper(['form','url']);
+        $model = new ClientModel();
+        
+            $data = [
+                'first_name' => $this->request->getVar('first_name'),
+                'last_name' => $this->request->getVar('last_name'),
+                'other_namea'  => $this->request->getVar('other_namea'),
+                'sex'  => $this->request->getVar('sex'),
+                'date_of_birth'  => $this->request->getVar('date_of_birth'),
+                'nationality'  => $this->request->getVar('nationality'),
+                'national_id'  => $this->request->getVar('national_id'),
+                'email'  => $this->request->getVar('email'),
+                'phone'  => $this->request->getVar('phone'),
+                'alternative_phone'  => $this->request->getVar('alternative_phone'),
+                'passport_number'  => $this->request->getVar('passport_number'),
+                'expiry_date'  => $this->request->getVar('expiry_date'),
+                'nok_full_name'  => $this->request->getVar('nok_full_name'),
+                'nok_phone'  => $this->request->getVar('nok_phone'),
+                'nok_email'  => $this->request->getVar('nok_email'),
+            ];
+            //print_r($data);
+        $insert = $model->insert($data);
+        print_r($insert);
+	}
+	
 
 
 
@@ -79,36 +74,7 @@ class Client extends Controller
 
 
 
-    // public function save() {
-    //     helper(['form', 'url']);
-    //     $model = new ClientModel();
-    //     $id = $this->request->getVar('id');
-    //     #TODO: Add other attributes for client
-    //     $data = [
-    //         'first_name' => $this->request->getVar('first_name'),
-    //         'last_name' => $this->request->getVar('first_name'),
-    //     ];
-
-    //     $insert = $model->insert($data);
-
-    //     return redirect()->to(base_url('clients'));
-    // }
-
-    // public function update() {
-    //     helper(['form', 'url']);
-
-    //     $model = new ClientModel();
-    //     $id = $this->request->getVar('id');
-    //     #TODO: Add other attributes for client
-    //     $data = [
-    //         'first_name' => $this->request->getVar('first_name'),
-    //         'last_name' => $this->request->getVar('first_name'),
-    //     ];
-
-    //     $update = $model->update($id, $data);
-
-    // }
-
+    
     public function delete($id = null)
     {
         $model = new ClientModel();

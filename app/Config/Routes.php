@@ -36,7 +36,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->match(['get', 'post'], '/clients/create-client', 'Client::create');
-$routes->get('/clients/save', 'Client::save');
+$routes->post('/client/save', 'Client::saveData');
 $routes->get('/clients/lab-booking', 'MainController::lab');
 $routes->get('/clients/hotel-booking', 'MainController::hotel');
 $routes->get('/clients/travel-details', 'MainController::travel');
